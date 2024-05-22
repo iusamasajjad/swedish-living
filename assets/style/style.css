@@ -120,8 +120,12 @@ button:hover{
 /* carousel */
 
 @media (max-width: 768px) {
-    .carousel-item .col-md-4 {
-      /* display: none; */
+    
+    .carousel-inner .carousel-item .row > div{
+        display: none;
+    }
+    .carousel-inner .carousel-item .row > div:first-child{
+        display: block !important;
     }
     .carousel-item .col-6 {
       display: block;
