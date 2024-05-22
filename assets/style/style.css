@@ -119,39 +119,32 @@ button:hover{
 }
 /* carousel */
 
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
+@media (max-width: 768px) {
+    .carousel-item .col-md-4 {
+      /* display: none; */
     }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
+    .carousel-item .col-6 {
+      display: block;
+      flex: 0 0 50%;
+      max-width: 50%;
     }
-}
+  }
 
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-/* medium and up screens */
-@media (min-width: 768px) {
-    
-    .carousel-inner .carousel-item-end.active,
-    .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
+  @media (max-width: 576px) {
+    .carousel-item .col-6 {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
-    
-    .carousel-inner .carousel-item-start.active, 
-    .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
-    }
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
+  }
+  .carousel-indicators{
+    bottom: -40px !important;
+  }
+  .carousel-indicators [data-bs-target]{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 100% !important;
+    background-color: #3B478B !important;
+  }
 /* hamburger */
 .overlay {
     position: fixed;
