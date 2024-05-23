@@ -123,37 +123,68 @@ button:hover{
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* carousel */
 
-@media (max-width: 768px) {
-    
-    .carousel-inner .carousel-item .row > div{
-        display: none;
-    }
-    .carousel-inner .carousel-item .row > div:first-child{
-        display: block !important;
-    }
-    .carousel-item .col-6 {
-      display: block;
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  }
+  /* carousel */
+.flickity-viewport{
+    overflow: hidden;
+}
+.flickity-page-dots{
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+    list-style: none;
+}
+.flickity-page-dots .dot{
+    width: 10px;
+    height: 10px;
+    background: #EEEEEE;
+    border-radius: 100%;
+    margin-top: 20px;
+}
+.flickity-page-dots .is-selected{
+    background: #575656;
+}
+.flickity-prev-next-button{
+    display: none;
+}
+.carousel-nav:focus-visible{
+    outline: none;
+}
+.carousel-cell.is-selected:focus-visible {
+    outline: none;
+}
+.flickity-viewport:focus-visible{
+    outline: none;
+}
+.carousel-main:focus-visible{
+    outline: none;
+}
 
-  @media (max-width: 576px) {
-    .carousel-item .col-6 {
-      flex: 0 0 100%;
-      max-width: 100%;
-    }
+  .carousel-cell {
+    width: 100%;
+    /* height: 80vh; */
+    margin-right: 10px;
+    object-fit: contain;
+    border-radius: 5px;
   }
-  .carousel-indicators{
-    bottom: -40px !important;
+  
+  /* cell number */
+ 
+  
+  .carousel-nav .carousel-cell {
+    height: unset !important;
+    width: 30%;
+    margin: 0px 15px;
+    cursor: pointer;
   }
-  .carousel-indicators [data-bs-target]{
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 100% !important;
-    background-color: #3B478B !important;
+  
+  .carousel-nav .carousel-cell:before {
+    font-size: 50px;
+    line-height: 80px;
+  }
+  .carousel-nav .carousel-cell.is-nav-selected div {
+    background: #EEEEEE !important;
+    color: #3B478B !important;
   }
 /* hamburger */
 .overlay {
@@ -192,6 +223,12 @@ button:hover{
     .w-20{
         width: 45%;
     }
+    .carousel-nav .carousel-cell{
+        font-size: 12px !important;
+    }
+    .carousel-nav .carousel-cell {
+        width: 50%;
+      }
 }
 /* iPads, Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
@@ -213,6 +250,12 @@ button:hover{
     .w-20{
         width: 45%;
     }
+    .carousel-nav .carousel-cell{
+        font-size: 12px !important;
+    }
+    .carousel-nav .carousel-cell {
+        width: 50%;
+      }
 }
 /* Small screens, laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -233,6 +276,9 @@ button:hover{
     }
     .w-20{
         width: 45%;
+    }
+    .carousel-nav .carousel-cell{
+        font-size: 12px !important;
     }
 }
 /* Desktops, large screens */
