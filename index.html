@@ -302,8 +302,19 @@
                   Tired of constantly having unknown people in your home for
                   viewings? So are we!
                 </p>
+                <p
+                  id="virtual"
+                  class="opacity-7 display-none pt-3 font-sm pt-2"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                  quas aliquam odio voluptatem numquam libero incidunt dicta
+                  animi tempore nemo iusto, in suscipit. Necessitatibus iure non
+                  cumque debitis molestias vel!
+                </p>
                 <div class="pt-3 d-flex justify-content-end align-items-end">
                   <button
+                    id="virtualBtn"
+                    onclick="readMore('virtual','virtualBtn')"
                     type="button"
                     class="text-white rounded-4 py-2 px-3 border-0 bg-blue"
                   >
@@ -326,8 +337,19 @@
                   A nightmare scenario for all landlords is to end up in a
                   situation where the tenant stops paying the rent
                 </p>
+                <p
+                  id="bgCheck"
+                  class="opacity-7 display-none pt-3 font-sm pt-2"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                  quas aliquam odio voluptatem numquam libero incidunt dicta
+                  animi tempore nemo iusto, in suscipit. Necessitatibus iure non
+                  cumque debitis molestias vel!
+                </p>
                 <div class="pt-3 d-flex justify-content-end">
                   <button
+                    id="bgBtn"
+                    onclick="readMore('bgCheck','bgBtn')"
                     type="button"
                     class="text-white rounded-4 py-2 px-3 border-0 bg-blue"
                   >
@@ -351,8 +373,16 @@
                   cornerstones of a safe and secure rental is a good legal
                   contract.
                 </p>
+                <p id="legal" class="opacity-7 display-none pt-3 font-sm pt-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum
+                  quas aliquam odio voluptatem numquam libero incidunt dicta
+                  animi tempore nemo iusto, in suscipit. Necessitatibus iure non
+                  cumque debitis molestias vel!
+                </p>
                 <div class="pt-3 d-flex justify-content-end align-items-end">
                   <button
+                    id="legalBtn"
+                    onclick="readMore('legal','legalBtn')"
                     type="button"
                     class="text-white rounded-4 py-2 px-3 border-0 bg-blue"
                   >
@@ -412,45 +442,34 @@
               <img src="./assets/images/review.png" alt="review" />
             </div>
           </div>
-          <!-- <div class="d-flex justify-content-between py-4">
-            <div class="bg-white shadow rounded-4 px-3 py-3">
-              <div>
-                <img src="./assets/images/review-1.png" alt="review" />
-              </div>
-              <div>
-                <p class="fw-bold text-center pt-2">
-                  Danielle - Private Renter
-                </p>
-              </div>
-            </div>
-            <div class="bg-white shadow rounded-4 px-3 py-3">
-              <div>
-                <img src="./assets/images/review-1.png" alt="review" />
-              </div>
-              <div>
-                <p class="fw-bold text-center pt-2">
-                  Danielle - Private Renter
-                </p>
-              </div>
-            </div>
-            <div class="bg-white shadow rounded-4 px-3 py-3">
-              <div>
-                <img src="./assets/images/review-1.png" alt="review" />
-              </div>
-              <div>
-                <p class="fw-bold text-center pt-2">
-                  Danielle - Private Renter
-                </p>
-              </div>
-            </div>
-          </div> -->
           <!-- carousel -->
           <div class="container text-center my-3">
-            <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div
+              id="multiItemCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#multiItemCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#multiItemCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#multiItemCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button
+                  type="button"
+                  data-bs-target="#multiItemCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#multiItemCarousel"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#multiItemCarousel"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
               </div>
               <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -610,16 +629,31 @@
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#multiItemCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#multiItemCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            
           </div>
         </div>
       </div>
@@ -647,7 +681,7 @@
             </div>
           </div>
           <div
-            class="py-3 d-flex flex-lg-row flex-column justify-content-center"
+            class="py-3 d-flex flex-lg-row flex-column justify-content-center align-items-center"
           >
             <div class="col-xl-5 col-12 pt-4">
               <div class="d-flex justify-content-center">
@@ -670,6 +704,9 @@
                   <p class="fw-bold">Advertising</p>
                   <div style="width: 15px">
                     <svg
+                      id="crossIcon"
+                      class="display-none cursor-pointer"
+                      onclick="toggle('advertising','plusIcon','crossIcon')"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -683,56 +720,10 @@
                         stroke-width="0.5"
                       />
                     </svg>
-                  </div>
-                </div>
-                <div>
-                  <p class="opacity-7 pt-2">
-                    We offer advertising both on our website and on most of the
-                    leading rental sites.
-                  </p>
-                </div>
-              </div>
-              <div
-                class="col-12 mt-3 bg-blue text-white rounded-4 shadow px-3 py-3"
-              >
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="fw-bold">
-                    Real Estate Portal (For real estate companies)
-                  </p>
-                  <div style="width: 15px">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                    >
-                      <path
-                        d="M18.8837 6.88375L19.0605 6.70697L18.8837 6.53019L17.4697 5.11619L17.293 4.93942L17.1162 5.11619L12 10.2324L6.88375 5.11619L6.70697 4.93942L6.53019 5.11619L5.11619 6.53019L4.93942 6.70697L5.11619 6.88375L10.2324 12L5.11619 17.1162L4.93942 17.293L5.11619 17.4697L6.53019 18.8837L6.70697 19.0605L6.88375 18.8837L12 13.7675L17.1162 18.8837L17.293 19.0605L17.4697 18.8837L18.8837 17.4697L19.0605 17.293L18.8837 17.1162L13.7675 12L18.8837 6.88375Z"
-                        fill="#fff"
-                        stroke="#fff"
-                        stroke-width="0.5"
-                      />
-                    </svg>
-                  </div>
-                </div>
-                <div>
-                  <p class="opacity-7 pt-2">
-                    To facilitate your rental, we have developed a real estate
-                    portal where we upload all your properties and their
-                    apartments. When your tenant hands in their notice, we
-                    automatically receive a message where we can book a 3D scan
-                    and start renting out the apartment. We tailor the renting
-                    process so that it fits your workflow and so that you can
-                    reduce the number of working hours.
-                  </p>
-                </div>
-              </div>
-              <div class="col-12 mt-3 bg-white rounded-4 shadow px-3 py-3">
-                <div class="d-flex justify-content-between align-items-center">
-                  <p class="fw-bold">Campaigns on Social Media</p>
-                  <div style="width: 15px">
-                    <svg
+                      id="plusIcon"
+                      class="cursor-pointer"
+                      onclick="toggle('advertising','plusIcon','crossIcon')"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -749,6 +740,107 @@
                   </div>
                 </div>
                 <div>
+                  <p id="advertising" class="opacity-7 pt-2 display-none">
+                    We offer advertising both on our website and on most of the
+                    leading rental sites.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fw-bold">
+                    Real Estate Portal (For real estate companies)
+                  </p>
+                  <div style="width: 15px">
+                    <svg
+                      id="crossIcon2"
+                      class="display-none cursor-pointer"
+                      onclick="toggle('realEstate','plusIcon2','crossIcon2')"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18.8837 6.88375L19.0605 6.70697L18.8837 6.53019L17.4697 5.11619L17.293 4.93942L17.1162 5.11619L12 10.2324L6.88375 5.11619L6.70697 4.93942L6.53019 5.11619L5.11619 6.53019L4.93942 6.70697L5.11619 6.88375L10.2324 12L5.11619 17.1162L4.93942 17.293L5.11619 17.4697L6.53019 18.8837L6.70697 19.0605L6.88375 18.8837L12 13.7675L17.1162 18.8837L17.293 19.0605L17.4697 18.8837L18.8837 17.4697L19.0605 17.293L18.8837 17.1162L13.7675 12L18.8837 6.88375Z"
+                        fill="#2C394B"
+                        stroke="#2C394B"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                    <svg
+                      id="plusIcon2"
+                      class="cursor-pointer"
+                      onclick="toggle('realEstate','plusIcon2','crossIcon2')"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.25 11V10.75H20H13.25V4V3.75H13H11H10.75V4V10.75H4H3.75V11V13V13.25H4H10.75V20V20.25H11H13H13.25V20V13.25H20H20.25V13V11Z"
+                        fill="#3B478B"
+                        stroke="#3B478B"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <p id="realEstate" class="opacity-7 pt-2 display-none">
+                    To facilitate your rental, we have developed a real estate
+                    portal where we upload all your properties and their
+                    apartments. When your tenant hands in their notice, we
+                    automatically receive a message where we can book a 3D scan
+                    and start renting out the apartment. We tailor the renting
+                    process so that it fits your workflow and so that you can
+                    reduce the number of working hours.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="fw-bold">Campaigns on Social Media</p>
+                  <div style="width: 15px">
+                    <svg
+                      id="crossIcon3"
+                      class="display-none cursor-pointer"
+                      onclick="toggle('campaigns','plusIcon3','crossIcon3')"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18.8837 6.88375L19.0605 6.70697L18.8837 6.53019L17.4697 5.11619L17.293 4.93942L17.1162 5.11619L12 10.2324L6.88375 5.11619L6.70697 4.93942L6.53019 5.11619L5.11619 6.53019L4.93942 6.70697L5.11619 6.88375L10.2324 12L5.11619 17.1162L4.93942 17.293L5.11619 17.4697L6.53019 18.8837L6.70697 19.0605L6.88375 18.8837L12 13.7675L17.1162 18.8837L17.293 19.0605L17.4697 18.8837L18.8837 17.4697L19.0605 17.293L18.8837 17.1162L13.7675 12L18.8837 6.88375Z"
+                        fill="#2C394B"
+                        stroke="#2C394B"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                    <svg
+                      id="plusIcon3"
+                      class="cursor-pointer"
+                      onclick="toggle('campaigns','plusIcon3','crossIcon3')"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.25 11V10.75H20H13.25V4V3.75H13H11H10.75V4V10.75H4H3.75V11V13V13.25H4H10.75V20V20.25H11H13H13.25V20V13.25H20H20.25V13V11Z"
+                        fill="#3B478B"
+                        stroke="#3B478B"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div id="campaigns" class="display-none">
                   <p class="opacity-7 pt-2">
                     In collaboration with leading influencers, we offer
                     top-class marketing for specific properties, student
@@ -771,6 +863,26 @@
                   <p class="fw-bold">Handover of Keys & Payment Control</p>
                   <div style="width: 15px">
                     <svg
+                      id="crossIcon4"
+                      class="display-none cursor-pointer"
+                      onclick="toggle('handover','plusIcon4','crossIcon4')"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M18.8837 6.88375L19.0605 6.70697L18.8837 6.53019L17.4697 5.11619L17.293 4.93942L17.1162 5.11619L12 10.2324L6.88375 5.11619L6.70697 4.93942L6.53019 5.11619L5.11619 6.53019L4.93942 6.70697L5.11619 6.88375L10.2324 12L5.11619 17.1162L4.93942 17.293L5.11619 17.4697L6.53019 18.8837L6.70697 19.0605L6.88375 18.8837L12 13.7675L17.1162 18.8837L17.293 19.0605L17.4697 18.8837L18.8837 17.4697L19.0605 17.293L18.8837 17.1162L13.7675 12L18.8837 6.88375Z"
+                        fill="#2C394B"
+                        stroke="#2C394B"
+                        stroke-width="0.5"
+                      />
+                    </svg>
+                    <svg
+                      id="plusIcon4"
+                      class="cursor-pointer"
+                      onclick="toggle('handover','plusIcon4','crossIcon4')"
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
                       height="24"
@@ -787,7 +899,7 @@
                   </div>
                 </div>
                 <div>
-                  <p class="opacity-7 pt-2">
+                  <p id="handover" class="opacity-7 pt-2 display-none">
                     Are you often away or do you want us to ensure that the
                     deposit and first rent are paid before moving in? Let us
                     handle the handover of the keys and the deposit check to
@@ -1368,6 +1480,7 @@
                 <div>
                   <button
                     type="button"
+                    id="private"
                     class="text-white rounded-4 py-2 px-4 border-0 bg-blue"
                   >
                     Private Landlord
@@ -1375,6 +1488,7 @@
                 </div>
                 <div>
                   <button
+                    id="realEstateCompany"
                     type="button"
                     class="text-blue border-blue rounded-4 py-2 px-3 bg-transparent"
                   >
@@ -1382,138 +1496,240 @@
                   </button>
                 </div>
               </div>
-              <div class="d-flex justify-content-center gap-4 flex-wrap">
-                <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
-                  <div class="d-flex align-items-center gap-2">
-                    <div
-                      style="width: 35px; height: 35px"
-                      class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
-                    >
-                      <p class="fw-bold">01</p>
+              <div id="privateCards">
+                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">01</p>
+                      </div>
+                      <p>Contact</p>
                     </div>
-                    <p>Contact</p>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        After you have filled in the contact form, a broker will
+                        contact you within 24 hours to schedule a short digital
+                        meeting.
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p class="opacity-7 pt-2 font-sm">
-                      After you have filled in the contact form, a broker will
-                      contact you within 24 hours to schedule a short digital
-                      meeting.
-                    </p>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">02</p>
+                      </div>
+                      <p>Digital Meeting</p>
+                    </div>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        During the digital meeting, you and the broker will go
+                        through the entire rental process and the details of
+                        your apartment. You will also agree on times for
+                        photography and 3D scanning of your home.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">03</p>
+                      </div>
+                      <p>Brokers Agreement</p>
+                    </div>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        After the digital meeting, a broker's agreement is sent
+                        to you for digital signature. The agreement grants
+                        Swedish Living the right to advertise your property.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">04</p>
+                      </div>
+                      <p>3D Scanning & Photography</p>
+                    </div>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        One of our staff visits your home to take pictures and
+                        3D scan your property. The 3D scan is a tool that
+                        facilitates the renting process by eliminating the need
+                        for physical viewings.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">05</p>
+                      </div>
+                      <p>Advertising</p>
+                    </div>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        Once the photos are taken, the rent is set, and you have
+                        been verified as a landlord, we publish your property on
+                        our platform and other relevant sites to ensure
+                        comprehensive distribution.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">06</p>
+                      </div>
+                      <p>Contact</p>
+                    </div>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        When a suitable tenant is found, an agreement for
+                        e-signing is sent. The tenant signs first and then the
+                        agreement is automatically forwarded to you, along with
+                        the credit report and the tenant's employment contract
+                        among other things.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">07</p>
+                      </div>
+                      <p>Access & Inspection</p>
+                    </div>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        After the agreement has been signed by both parties, the
+                        key handover remains. We also guide you here by
+                        providing an inspection protocol and a move-in
+                        checklist. This ensures that everything goes smoothly
+                        when you hand over the property to the tenant.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
-                  <div class="d-flex align-items-center gap-2">
-                    <div
-                      style="width: 35px; height: 35px"
-                      class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
-                    >
-                      <p class="fw-bold">02</p>
+              </div>
+              <div id="realEstateCards" class="display-none">
+                <div class="d-flex justify-content-center gap-4 flex-wrap">
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">01</p>
+                      </div>
+                      <p>Brokers Agreement</p>
                     </div>
-                    <p>Digital Meeting</p>
-                  </div>
-                  <div>
-                    <p class="opacity-7 pt-2 font-sm">
-                      During the digital meeting, you and the broker will go
-                      through the entire rental process and the details of your
-                      apartment. You will also agree on times for photography
-                      and 3D scanning of your home.
-                    </p>
-                  </div>
-                </div>
-                <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
-                  <div class="d-flex align-items-center gap-2">
-                    <div
-                      style="width: 35px; height: 35px"
-                      class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
-                    >
-                      <p class="fw-bold">03</p>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        After the digital meeting, a broker's agreement is sent
+                        to you for digital signature. The agreement grants
+                        Swedish Living the right to advertise your property.
+                      </p>
                     </div>
-                    <p>Brokers Agreement</p>
                   </div>
-                  <div>
-                    <p class="opacity-7 pt-2 font-sm">
-                      After the digital meeting, a broker's agreement is sent to
-                      you for digital signature. The agreement grants Swedish
-                      Living the right to advertise your property.
-                    </p>
-                  </div>
-                </div>
-                <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
-                  <div class="d-flex align-items-center gap-2">
-                    <div
-                      style="width: 35px; height: 35px"
-                      class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
-                    >
-                      <p class="fw-bold">04</p>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">02</p>
+                      </div>
+                      <p>3D Scanning & Photography</p>
                     </div>
-                    <p>3D Scanning & Photography</p>
-                  </div>
-                  <div>
-                    <p class="opacity-7 pt-2 font-sm">
-                      One of our staff visits your home to take pictures and 3D
-                      scan your property. The 3D scan is a tool that facilitates
-                      the renting process by eliminating the need for physical
-                      viewings.
-                    </p>
-                  </div>
-                </div>
-                <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
-                  <div class="d-flex align-items-center gap-2">
-                    <div
-                      style="width: 35px; height: 35px"
-                      class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
-                    >
-                      <p class="fw-bold">05</p>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        One of our staff visits your home to take pictures and
+                        3D scan your property. The 3D scan is a tool that
+                        facilitates the renting process by eliminating the need
+                        for physical viewings.
+                      </p>
                     </div>
-                    <p>Advertising</p>
                   </div>
-                  <div>
-                    <p class="opacity-7 pt-2 font-sm">
-                      Once the photos are taken, the rent is set, and you have
-                      been verified as a landlord, we publish your property on
-                      our platform and other relevant sites to ensure
-                      comprehensive distribution.
-                    </p>
-                  </div>
-                </div>
-                <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
-                  <div class="d-flex align-items-center gap-2">
-                    <div
-                      style="width: 35px; height: 35px"
-                      class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
-                    >
-                      <p class="fw-bold">06</p>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">03</p>
+                      </div>
+                      <p>Advertising</p>
                     </div>
-                    <p>Contact</p>
-                  </div>
-                  <div>
-                    <p class="opacity-7 pt-2 font-sm">
-                      When a suitable tenant is found, an agreement for
-                      e-signing is sent. The tenant signs first and then the
-                      agreement is automatically forwarded to you, along with
-                      the credit report and the tenant's employment contract
-                      among other things.
-                    </p>
-                  </div>
-                </div>
-                <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
-                  <div class="d-flex align-items-center gap-2">
-                    <div
-                      style="width: 35px; height: 35px"
-                      class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
-                    >
-                      <p class="fw-bold">07</p>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        Once the photos are taken, the rent is set, and you have
+                        been verified as a landlord, we publish your property on
+                        our platform and other relevant sites to ensure
+                        comprehensive distribution.
+                      </p>
                     </div>
-                    <p>Access & Inspection</p>
                   </div>
-                  <div>
-                    <p class="opacity-7 pt-2 font-sm">
-                      After the agreement has been signed by both parties, the
-                      key handover remains. We also guide you here by providing
-                      an inspection protocol and a move-in checklist. This
-                      ensures that everything goes smoothly when you hand over
-                      the property to the tenant.
-                    </p>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">04</p>
+                      </div>
+                      <p>Contact</p>
+                    </div>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        When a suitable tenant is found, an agreement for
+                        e-signing is sent. The tenant signs first and then the
+                        agreement is automatically forwarded to you, along with
+                        the credit report and the tenant's employment contract
+                        among other things.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
+                    <div class="d-flex align-items-center gap-2">
+                      <div
+                        style="width: 35px; height: 35px"
+                        class="d-flex bg-blue text-white rounded-circle justify-content-center align-items-center"
+                      >
+                        <p class="fw-bold">05</p>
+                      </div>
+                      <p>Access & Inspection</p>
+                    </div>
+                    <div>
+                      <p class="opacity-7 pt-2 font-sm">
+                        After the agreement has been signed by both parties, the
+                        key handover remains. We also guide you here by
+                        providing an inspection protocol and a move-in
+                        checklist. This ensures that everything goes smoothly
+                        when you hand over the property to the tenant.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

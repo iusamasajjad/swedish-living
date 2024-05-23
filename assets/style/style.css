@@ -24,6 +24,12 @@ p{
 .right-0{
     right: 0;
 }
+.cursor-pointer{
+    cursor: pointer;
+}
+.display-none{
+    display: none;
+}
 /* width */
 .w-30{
     width: 30%;
