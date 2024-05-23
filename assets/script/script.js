@@ -40,28 +40,6 @@ function menuToggle() {
       cross.style.display = "block";
     }
   }
-  // function companySwitcher(privateCards,realEstateCards,privateBtn,realEstateBtn) {
-  //   var privateCompanyCards = document.getElementById(privateCards);
-  //   var realEstateCompanyCards = document.getElementById(realEstateCards);
-  //   // var privateCompanyBtn = document.getElementById(privateBtn);
-  //   // var realEstateCompanyBtn = document.getElementById(realEstateBtn);
-  //   if(privateCompanyCards.style.display == "block"){
-  //     realEstateCompanyCards.style.display = "none";
-  //     // privateCompanyBtn.style.background = "#3B478B";
-  //     // privateCompanyBtn.style.color = "#fff";
-  //     // realEstateCompanyBtn.style.background = "transparent";
-  //     // realEstateCompanyBtn.style.color = "#3B478B";
-  //     // realEstateCompanyBtn.style.border = "1px solid #3B478B";
-  //   } 
-  //   if(realEstateCompanyCards.style.display == "block"){
-  //     privateCompanyCards.style.display = "none"
-  //     // realEstateCompanyBtn.style.background = "#3B478B";
-  //     // realEstateCompanyBtn.style.color = "#fff";
-  //     // privateCompanyBtn.style.background = "transparent";
-  //     // privateCompanyBtn.style.color = "#3B478B";
-  //     // privateCompanyBtn.style.border = "1px solid #3B478B";
-  //   }
-  // }
   document.getElementById('private').addEventListener('click', function() {
     document.getElementById('privateCards').classList.remove('display-none');
     document.getElementById('realEstateCards').classList.add('display-none');
@@ -69,8 +47,6 @@ function menuToggle() {
     document.getElementById('private').classList.remove('text-blue' ,'border-blue', 'bg-transparent');
     document.getElementById('realEstateCompany').classList.remove('text-white', 'border-0', 'bg-blue');
     document.getElementById('realEstateCompany').classList.add('text-blue' ,'border-blue', 'bg-transparent');
-
-
 });
 
 document.getElementById('realEstateCompany').addEventListener('click', function() {
@@ -80,5 +56,4 @@ document.getElementById('realEstateCompany').addEventListener('click', function(
     document.getElementById('private').classList.remove('text-white', 'border-0', 'bg-blue');
     document.getElementById('realEstateCompany').classList.add('text-white', 'border-0', 'bg-blue');
     document.getElementById('realEstateCompany').classList.remove('text-blue' ,'border-blue', 'bg-transparent');
-
 });
