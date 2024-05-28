@@ -52,3 +52,63 @@ document.getElementById('realEstateCompany').addEventListener('click', function(
     document.getElementById('realEstateCompany').classList.add('text-white', 'border-0', 'bg-blue');
     document.getElementById('realEstateCompany').classList.remove('text-blue' ,'border-blue', 'bg-transparent');
 });
+// custom slider
+let currentSlide = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+const dots = document.querySelectorAll('.dot');
+const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+function moveSlide(direction) {
+    if (!isMobile) return;
+    
+    currentSlide += direction;
+
+    if (currentSlide >= totalSlides) {
+        currentSlide = 0;
+    } else if (currentSlide < 0) {
+        currentSlide = totalSlides - 1;
+    }
+
+    updateSlidePosition();
+}
+
+function goToSlide(slideIndex) {
+    if (!isMobile) return;
+    
+    currentSlide = slideIndex;
+    updateSlidePosition();
+}
+
+function updateSlidePosition() {
+    if (!isMobile) return;
+    
+    const offset = -currentSlide * 100;
+    slides.style.transform = `translateX(${offset}%)`;
+    updateDots();
+}
+
+function updateDots() {
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+function autoSlide() {
+    if (!isMobile) return;
+    
+    moveSlide(1);
+}
+
+let slideInterval = setInterval(autoSlide, 3000);
+
+document.querySelector('.slider').addEventListener('mouseover', () => {
+    if (isMobile) clearInterval(slideInterval);
+});
+
+document.querySelector('.slider').addEventListener('mouseout', () => {
+    if (isMobile) slideInterval = setInterval(autoSlide, 3000);
+});
+
+updateSlidePosition(); // Initial call to set the first slide
+
