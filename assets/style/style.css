@@ -191,6 +191,9 @@ button:hover{
     object-fit: contain;
     border-radius: 5px;
   }
+.carousel-main .flickity-viewport {
+    height: 550px !important;
+  }
   
   /* cell number */
  
@@ -353,6 +356,9 @@ button:hover{
         overflow: hidden;
         height: 200px !important;
     }
+    .carousel-main .flickity-viewport {
+        height: 150px !important;
+      }
 }
 /* iPads, Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
@@ -384,6 +390,9 @@ button:hover{
         overflow: hidden;
         height: 200px !important;
     }
+    .carousel-main .flickity-viewport {
+        height: 150px !important;
+      }
 }
 /* Small screens, laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -412,6 +421,9 @@ button:hover{
         overflow: hidden;
         height: 200px !important;
     }
+    .carousel-main .flickity-viewport {
+        height: 200px !important;
+      }
     
 }
 /* Desktops, large screens */
