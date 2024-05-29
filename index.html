@@ -100,16 +100,28 @@
                 Discover one of Our Brokered Apartments
               </p>
             </div>
-            <div>
-              <iframe
-                class="col-12 rounded-4"
-                height="480"
-                src="https://my.matterport.com/show/?m=xhrdf7hX8FJ"
-                frameborder="0"
-                allowfullscreen
-                allow="xr-spatial-tracking"
-              ></iframe>
-            </div>
+            <video
+              class="col-12 rounded-4"
+              muted
+              loop
+              autoplay
+              controls
+              playsinline
+            >
+              <source
+                src="./assets/videos/Swedish-living.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="./assets/videos/Swedish-living.mp4"
+                type="video/oog"
+              />
+              <source
+                type="video/webm"
+                src="./assets/videos/Swedish-living.mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
             <div class="d-flex justify-content-end">
               <img
                 class="position-relative"
@@ -315,7 +327,7 @@
                 <div>
                   <img
                     class="position-relative"
-                    style="width: 18px; right: 120px; bottom: 10px"
+                    style="width: 18px; right: 120px; bottom: 30px"
                     src="./assets/images/Ornament-2.png"
                     alt="ornament"
                   />
@@ -350,7 +362,7 @@
                 <div>
                   <img
                     class="position-relative"
-                    style="width: 18px; right: 120px; bottom: 10px"
+                    style="width: 18px; right: 120px; bottom: 30px"
                     src="./assets/images/Ornament-2.png"
                     alt="ornament"
                   />
@@ -385,7 +397,7 @@
                 <div>
                   <img
                     class="position-relative"
-                    style="width: 18px; right: 120px; bottom: 10px"
+                    style="width: 18px; right: 120px; bottom: 30px"
                     src="./assets/images/Ornament-2.png"
                     alt="ornament"
                   />
@@ -420,7 +432,7 @@
                 <div>
                   <img
                     class="position-relative"
-                    style="width: 18px; right: 120px; bottom: 10px"
+                    style="width: 18px; right: 120px; bottom: 30px"
                     src="./assets/images/Ornament-2.png"
                     alt="ornament"
                   />
@@ -780,7 +792,7 @@
       </div>
       <!-- ============ our-packages-section =============== -->
       <div class="bg-off-white py-5">
-        <div class="container mx-auto">
+        <div class="">
           <h4 class="font-lg text-center">
             Our Packages
             <div class="d-flex justify-content-center">
@@ -809,11 +821,11 @@
           </div>
           <!-- ======= packages-cards ================ -->
           <!-- custom slider -->
-          <div class="container mx-auto">
-            <div class="slider">
-              <div class="slides">
+          <div class="d-flex main-carousel justify-content-center">
+            <div class="slider col-lg-10 col-10">
+              <div class="slides gap-3 gap-lg-0 bg-white rounded-4 shadow-md">
                 <div
-                  class="col-xl-4 slide col-12 rounded-end position-relative bg-white rounded-4 px-3 py-3"
+                  class="col-xl-4 slide col-10 rounded-end position-relative bg-white rounded-4 px-3 py-3"
                 >
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -931,7 +943,7 @@
                 </div>
                 <div
                   style="border-radius: 40px 40px 60px 0px !important"
-                  class="col-xl-4 slide col-12 position-relative bg-blue text-white px-3 py-4"
+                  class="col-xl-4 slide col-10 position-relative bg-blue text-white px-3 py-4"
                 >
                   <div
                     style="bottom: -15px; left: 30%"
@@ -1120,7 +1132,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-xl-4 slide col-12 rounded-start position-relative bg-white rounded-4 px-3 py-3 pb-5"
+                  class="col-xl-4 slide col-10 rounded-start position-relative bg-white rounded-4 px-3 py-3 pb-5"
                 >
                   <div
                     style="bottom: -15px; left: 30%"
@@ -1136,23 +1148,22 @@
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
-                    <p class="fw-bold text-uppercase">Standard</p>
+                    <p class="fw-bold text-uppercase">Premium</p>
                   </div>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
-                    <p class="fw-bold font-lg text-uppercase">1395 KR</p>
+                    <p class="fw-bold font-lg text-uppercase">1975 KR</p>
                     <div>
                       <p class="font-md fw-bold text-decoration-line-through">
-                        1995 KR
+                        2995 KR
                       </p>
                     </div>
                   </div>
                   <div>
                     <p class="opacity-7 py-2">
-                      For those seeking support in the rental process and
-                      wanting to maximize the chances of finding a reliable
-                      tenant.
+                      For those who want to relax and let us handle everything
+                      from start to finish.
                     </p>
                     <p class="fw-bold">Included:</p>
                     <div class="d-flex pt-2 align-items-center gap-2">
@@ -1917,7 +1928,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">01</p>
                       </div>
@@ -1934,7 +1945,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">02</p>
                       </div>
@@ -1952,7 +1963,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">03</p>
                       </div>
@@ -1969,7 +1980,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">04</p>
                       </div>
@@ -1987,7 +1998,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">05</p>
                       </div>
@@ -2005,7 +2016,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">06</p>
                       </div>
@@ -2024,7 +2035,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">07</p>
                       </div>
@@ -2047,7 +2058,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">01</p>
                       </div>
@@ -2065,7 +2076,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">02</p>
                       </div>
@@ -2083,7 +2094,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">03</p>
                       </div>
@@ -2100,7 +2111,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">04</p>
                       </div>
@@ -2118,7 +2129,7 @@
                   <div class="w-20 mt-3 bg-white rounded-4 shadow px-3 py-3">
                     <div class="d-flex align-items-center gap-2">
                       <div
-                        class="d-flex circle bg-blue text-white rounded-circle justify-content-center align-items-center"
+                        class="d-flex col-2 circle bg-blue text-white rounded-circle justify-content-center align-items-center"
                       >
                         <p class="fw-lg-bold p-1">05</p>
                       </div>
@@ -2182,16 +2193,15 @@
         class="d-flex position-fixed bottom-0 left-0 right-0 mt-5 justify-content-center"
       >
         <div
-          class="bg-blue contact-bg mb-2 px-3 py-4 d-flex align-items-center justify-content-between rounded-4 col-12 col-xl-6"
+          class="bg-blue contact-bg mb-2 px-3 py-lg-4 py-2 d-flex align-items-center justify-content-between rounded-pill"
         >
-          <p class="font-weight-bold font-md text-white">
-            Do you want to know <br />
-            more?
+          <p class="font-weight-bold pe-3 font-circle text-white">
+            Do you want to know more?
           </p>
           <div>
             <button
               type="button"
-              class="text-blue rounded-5 py-2 px-4 border-0 bg-white"
+              class="text-blue font-circle rounded-5 py-2 px-lg-4 px-2 border-0 bg-white"
             >
               Contact Us
             </button>
