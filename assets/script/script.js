@@ -112,3 +112,37 @@ document.querySelector('.slider').addEventListener('mouseout', () => {
 
 updateSlidePosition(); // Initial call to set the first slide
 
+const slideWidth = document.querySelector('.slide').offsetWidth;
+let currentIndex = 0;
+
+document.querySelector('.next').addEventListener('click', () => {
+    currentIndex = Math.min(currentIndex + 1, slides.children.length - 1);
+    updateSlider();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = Math.max(currentIndex - 1, 0);
+    updateSlider();
+});
+
+let startX;
+
+slides.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+});
+
+slides.addEventListener('touchend', (e) => {
+    const endX = e.changedTouches[0].clientX;
+    const diff = endX - startX;
+
+    if (diff > 50) {
+        currentIndex = Math.max(currentIndex - 1, 0);
+    } else if (diff < -50) {
+        currentIndex = Math.min(currentIndex + 1, slides.children.length - 1);
+    }
+    updateSlider();
+});
+
+function updateSlider() {
+    slides.style.transform = `translateX(-${(slideWidth + 15) * currentIndex}px)`;
+}
