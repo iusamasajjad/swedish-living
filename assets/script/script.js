@@ -61,7 +61,7 @@ const isMobile = window.matchMedia('(max-width: 767px)').matches;
 
 function moveSlide(direction) {
     if (!isMobile) return;
-    
+
     currentSlide += direction;
 
     if (currentSlide >= totalSlides) {
@@ -75,16 +75,18 @@ function moveSlide(direction) {
 
 function goToSlide(slideIndex) {
     if (!isMobile) return;
-    
+
     currentSlide = slideIndex;
     updateSlidePosition();
 }
 
 function updateSlidePosition() {
     if (!isMobile) return;
-    
-    const offset = -currentSlide * 100;
-    slides.style.transform = `translateX(${offset}%)`;
+
+    const slideWidth = document.querySelector('.slide').offsetWidth + 20; // Recalculate on each update
+    const offset = -currentSlide * slideWidth;
+    console.log("Current Slide:", currentSlide, "Offset:", offset); // Debugging output
+    slides.style.transform = `translateX(${offset}px)`;
     updateDots();
 }
 
@@ -94,55 +96,37 @@ function updateDots() {
     });
 }
 
-function autoSlide() {
-    if (!isMobile) return;
-    
-    moveSlide(1);
-}
+// Initial call to set the first slide position and dot
+updateSlidePosition();
 
-let slideInterval = setInterval(autoSlide, 3000);
-
-document.querySelector('.slider').addEventListener('mouseover', () => {
-    if (isMobile) clearInterval(slideInterval);
-});
-
-document.querySelector('.slider').addEventListener('mouseout', () => {
-    if (isMobile) slideInterval = setInterval(autoSlide, 3000);
-});
-
-updateSlidePosition(); // Initial call to set the first slide
-
-const slideWidth = document.querySelector('.slide').offsetWidth;
-let currentIndex = 0;
-
+// Event listeners for navigation buttons
 document.querySelector('.next').addEventListener('click', () => {
-    currentIndex = Math.min(currentIndex + 1, slides.children.length - 1);
-    updateSlider();
+    moveSlide(1);
 });
 
 document.querySelector('.prev').addEventListener('click', () => {
-    currentIndex = Math.max(currentIndex - 1, 0);
-    updateSlider();
+    moveSlide(-1);
 });
 
+// Swipe functionality for mobile
 let startX;
 
 slides.addEventListener('touchstart', (e) => {
     startX = e.touches[0].clientX;
 });
 
+slides.addEventListener('touchmove', (e) => {
+    e.preventDefault(); // Prevents scrolling during swipe
+}, { passive: false });
+
 slides.addEventListener('touchend', (e) => {
     const endX = e.changedTouches[0].clientX;
     const diff = endX - startX;
-
-    if (diff > 50) {
-        currentIndex = Math.max(currentIndex - 1, 0);
-    } else if (diff < -50) {
-        currentIndex = Math.min(currentIndex + 1, slides.children.length - 1);
+    if (Math.abs(diff) > 50) { // Increase sensitivity
+        moveSlide(diff > 0 ? -1 : 1);
     }
-    updateSlider();
 });
 
-function updateSlider() {
-    slides.style.transform = `translateX(-${(slideWidth + 15) * currentIndex}px)`;
-}
+document.addEventListener('DOMContentLoaded', () => {
+    updateSlidePosition();
+});
