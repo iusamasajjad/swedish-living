@@ -43,6 +43,11 @@ video:-webkit-full-page-media{
 }
 .discover{
     background: #FFFFFF1A;
+    position: absolute;
+    border-radius: 0px 0px 0px 0px;
+}
+.apartment-video video {
+    border-radius: 20px 20px 20px 20px;
 }
 /* width */
 .w-30{
@@ -360,6 +365,14 @@ button:hover{
     .carousel-main .flickity-viewport {
         height: 150px !important;
       }
+    .discover{
+        background: #0000001a;
+        position: static;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .apartment-video video {
+        border-radius: 0px 0px 20px 20px;
+    }
 }
 /* iPads, Tablets */
 @media (min-width: 481px) and (max-width: 768px) {
@@ -393,7 +406,15 @@ button:hover{
     }
     .carousel-main .flickity-viewport {
         height: 150px !important;
-      }
+    }
+    .discover{
+        background: #0000001a;
+        position: static;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .apartment-video video {
+        border-radius: 0px 0px 20px 20px;
+    }
 }
 /* Small screens, laptops */
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -424,7 +445,15 @@ button:hover{
     }
     .carousel-main .flickity-viewport {
         height: 200px !important;
-      }
+    }
+    .discover{
+        background: #0000001a;
+        position: static;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .apartment-video video {
+        border-radius: 0px 0px 20px 20px;
+    }
     
 }
 /* Desktops, large screens */
