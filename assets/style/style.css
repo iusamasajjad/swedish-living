@@ -250,6 +250,7 @@ button:hover{
 .slide {
     min-width: 100%;
     box-sizing: border-box;
+    border: 1px solid #e7e9f1;
 }
 
 
