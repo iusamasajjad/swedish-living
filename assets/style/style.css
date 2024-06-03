@@ -310,7 +310,7 @@ button:hover{
 }
 
 /* Media query for larger screens */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     .slides {
         transform: none !important;
         flex-wrap: nowrap;
