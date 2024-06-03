@@ -253,7 +253,7 @@ button:hover{
 }
 
 .slide {
-    min-width: 100%;
+    min-width: 85%;
     box-sizing: border-box;
     border: 1px solid #e7e9f1;
 }
