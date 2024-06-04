@@ -85,7 +85,6 @@ video:-webkit-full-page-media{
 }
 .bg-off-white{
     background: #F5F9FA;
-    ;
 }
 .bg-darkblue{
     background: #010913;
@@ -231,7 +230,13 @@ button:hover{
     overflow-x: hidden;
     transition: 0.5s;
 }
-
+/* contact-us-form */
+.z-10{
+z-index: 10;
+}
+.display-none{
+    display: none ;
+}
 /* custom slider */
 
 /* media-queries */

@@ -29,6 +29,82 @@
   </head>
   <body>
     <div>
+      <!-- contact-us-form -->
+      <div id="contact-form" class="display-none">
+        <div
+          class="d-flex col-12 z-10 position-fixed top-0 right-0 left-0 bottom-0 justify-content-center"
+        >
+          <div
+            class="col-lg-6 col-10 mt-3 position-relative bg-off-white shadow-lg rounded-4 px-2 py-2 mb-2"
+          >
+            <div
+              style="right: 3px; z-index: 20"
+              class="position-absolute top-2"
+            >
+              <svg
+                onclick='formClose("contact-form")'
+                class="cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M18.8837 6.88375L19.0605 6.70697L18.8837 6.53019L17.4697 5.11619L17.293 4.93942L17.1162 5.11619L12 10.2324L6.88375 5.11619L6.70697 4.93942L6.53019 5.11619L5.11619 6.53019L4.93942 6.70697L5.11619 6.88375L10.2324 12L5.11619 17.1162L4.93942 17.293L5.11619 17.4697L6.53019 18.8837L6.70697 19.0605L6.88375 18.8837L12 13.7675L17.1162 18.8837L17.293 19.0605L17.4697 18.8837L18.8837 17.4697L19.0605 17.293L18.8837 17.1162L13.7675 12L18.8837 6.88375Z"
+                  fill="#2C394B"
+                  stroke="#2C394B"
+                  stroke-width="0.5"
+                />
+              </svg>
+            </div>
+            <div
+              class="pipedriveWebForms"
+              data-pd-webforms="https://webforms.pipedrive.com/f/bXsdgNXGgV6FuPn5mLDZZ2P5iGS5TXc9W5lKUmqNXCYNVjF0Mt00dVGOlkg9qDsp6b"
+            >
+              <script src="https://webforms.pipedrive.com/f/loader"></script>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- demo-form -->
+      <div id="demo-form" class="display-none">
+        <div
+          class="d-flex col-12 z-10 position-fixed top-0 right-0 left-0 bottom-0 justify-content-center"
+        >
+          <div
+            class="col-lg-6 col-10 mt-3 position-relative bg-off-white shadow-lg rounded-4 px-2 py-2 mb-2"
+          >
+            <div
+              style="right: 3px; z-index: 20"
+              class="position-absolute top-2"
+            >
+              <svg
+                onclick='formClose("demo-form")'
+                class="cursor-pointer"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M18.8837 6.88375L19.0605 6.70697L18.8837 6.53019L17.4697 5.11619L17.293 4.93942L17.1162 5.11619L12 10.2324L6.88375 5.11619L6.70697 4.93942L6.53019 5.11619L5.11619 6.53019L4.93942 6.70697L5.11619 6.88375L10.2324 12L5.11619 17.1162L4.93942 17.293L5.11619 17.4697L6.53019 18.8837L6.70697 19.0605L6.88375 18.8837L12 13.7675L17.1162 18.8837L17.293 19.0605L17.4697 18.8837L18.8837 17.4697L19.0605 17.293L18.8837 17.1162L13.7675 12L18.8837 6.88375Z"
+                  fill="#2C394B"
+                  stroke="#2C394B"
+                  stroke-width="0.5"
+                />
+              </svg>
+            </div>
+            <div
+              class="pipedriveWebForms"
+              data-pd-webforms="https://webforms.pipedrive.com/f/ccSVPPednoneqFZArpEKJYSwazSIF7MdCDWL9IJ0ZUbUe2LCFEHInvGidY2soJiGeD"
+            >
+              <script src="https://webforms.pipedrive.com/f/loader"></script>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- ============= hero-section ===================== -->
       <div
         class="hero-bg d-flex align-items-center justify-content-center text-center"
@@ -61,6 +137,7 @@
           >
             <div>
               <button
+                onclick="formOpen('contact-form')"
                 type="button"
                 class="text-white rounded-5 py-2 px-4 border-0 bg-blue"
               >
@@ -70,6 +147,7 @@
             <div>
               <button
                 type="button"
+                onclick="formOpen('demo-form')"
                 class="text-black rounded-5 border-blue py-2 px-4 bg-transparent"
               >
                 Demo (For Real Estate Companies)
@@ -321,6 +399,7 @@
                   </p>
                   <div>
                     <button
+                      onclick="formOpen('contact-form')"
                       type="button"
                       class="text-white rounded-5 py-2 px-4 border-0 bg-blue"
                     >
@@ -888,6 +967,7 @@
                     class="position-absolute"
                   >
                     <button
+                      onclick="formOpen('contact-form')"
                       type="button"
                       class="rounded-4 py-2 px-3 border-0 bg-gray"
                     >
@@ -905,6 +985,7 @@
                   >
                     <button
                       type="button"
+                      onclick="formOpen('contact-form')"
                       class="rounded-4 text-white py-2 px-3 border-0 bg-linear-blue"
                     >
                       Select package
@@ -1094,6 +1175,7 @@
                   >
                     <button
                       type="button"
+                      onclick="formOpen('contact-form')"
                       class="rounded-4 py-2 px-3 border-0 bg-gray"
                     >
                       Select package
@@ -1602,6 +1684,7 @@
           <div>
             <button
               type="button"
+              onclick="formOpen('contact-form')"
               class="text-blue font-circle rounded-5 py-2 px-lg-4 px-2 border-0 bg-white"
             >
               Contact Us

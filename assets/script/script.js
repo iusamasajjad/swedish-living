@@ -10,6 +10,14 @@ function menuToggle() {
     var x = document.getElementById("mobile-menu");
     x.style.width = "0%";
   }
+  function formOpen(id) {
+    var x = document.getElementById(id);
+    x.style.display = "block";
+  }
+  function formClose(id) {
+    var x = document.getElementById(id);
+    x.style.display = "none";
+  }
   function readMore(text,btnText) {
     var moreText = document.getElementById(text);
     var btn = document.getElementById(btnText);
